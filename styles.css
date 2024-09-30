@@ -151,6 +151,7 @@ body, html {
     min-height: 100vh;
     margin-left: 250px;
     width: calc(100% - 250px);
+    padding-bottom: 29px;
 }
 
 .about-section h2 {
@@ -299,12 +300,12 @@ body, html {
 .content h1.animate, .content p.animate {
     opacity: 1;
     transform: translateY(0);
+    color: white;
 }
 
 /* Basic styling for sections */
 section {
   padding: 50px;
-  background-color: #f9f9f9;
   margin-bottom: 20px;
 }
 
@@ -463,3 +464,251 @@ html {
 .project-link:hover {
     color: #1c2537;
 }
+/* Services Section */
+
+
+#services h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#services p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: calc(100% - 40px); /* Full width on small screens */
+  }
+}
+.service-icon {
+  font-size: 50px;
+  color: #3498db; /* Choose a color matching your theme */
+  margin-bottom: 15px;
+}
+/* General Section Styling */
+#contact.modern-contact {
+  padding: 80px 20px;
+  background-color: #f4f7fb;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Flexbox layout for the two columns */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.contact-details,
+.contact-form-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+  transition: transform 0.3s;
+  height: 555px;
+}
+
+.contact-details:hover,
+.contact-form-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.contact-details h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Styling for the embedded map */
+.map {
+  margin-bottom: 20px;
+}
+
+/* Modern Contact Form */
+.contact-form-container .contact-form {
+  margin: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #333;
+  transition: border 0.3s, box-shadow 0.3s;
+  margin-bottom: 15px; /* Add margin for better spacing */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #149ddd;
+  box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: inline-block;
+  background-color: #149ddd;
+  color: #fff;
+  padding: 14px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-details,
+  .contact-form-container {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  #contact h2 {
+    font-size: 2.2rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+}
+
+/* Adjusted Contact Info and Map */
+.contact-info-top,
+.contact-info-bottom {
+  margin-bottom: 20px;
+}
+
+.contact-info-top p,
+.contact-info-bottom p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Adjusted Contact Info and Icon Styling */
+.contact-info-top p,
+.contact-info-bottom p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-top p i,
+.contact-info-bottom p i {
+  margin-right: 10px;
+  color: #007BFF; /* Optional: Change icon color */
+  font-size: 1.2rem;
+}
+/* Footer Styling */
+footer {
+  background-color: #f4f7fb; /* Dark background for contrast */
+  color: black; /* White text for readability */
+  text-align: center; /* Centered text */
+  padding: 20px 0; /* Padding for top and bottom */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+footer p {
+  margin: 5px 0; /* Margins for spacing between paragraphs */
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.8rem; /* Smaller text on mobile */
+  }
+}
+
